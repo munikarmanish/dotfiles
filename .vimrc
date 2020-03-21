@@ -3,7 +3,7 @@ syntax enable
 set background=dark
 
 " indentation stuffs (don't forget to use editorconfig plugin)
-filetype indent on
+filetype plugin indent on
 set autoindent smartindent
 set expandtab
 set tabstop=4 softtabstop=4 shiftwidth=4
@@ -41,3 +41,6 @@ set foldmethod=syntax
 
 " path to search for files
 set path+=**
+
+" normal backspace behavior
+set backspace=2
