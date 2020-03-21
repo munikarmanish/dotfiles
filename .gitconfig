@@ -1,0 +1,9 @@
+[user]
+	name = Manish Munikar
+	email = munikarmanish@gmail.com
+
+[format]
+	pretty = oneline
+
+[log]
+	abbrevCommit = true
