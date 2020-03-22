@@ -38,9 +38,25 @@ set foldenable
 set foldlevelstart=2
 set foldnestmax=5
 set foldmethod=syntax
+nnoremap <space> za
 
 " path to search for files
 set path+=**
 
 " normal backspace behavior
 set backspace=2
+
+" plugins
+" packadd minpac
+" call minpac#init()
+" call minpac#add('k-takata/minpac', {'type': 'opt'})
+" call minpac#add('editorconfig/editorconfig-vim')
+" call minpac#add('itchyny/lightline.vim')
+" call minpac#add('tomtom/tcomment_vim')
+" call minpac#add('airblade/vim-gitgutter')
+" call minpac#add('nathanaelkane/vim-indent-guides')
+" call minpac#add('kien/ctrlp.vim')
+
+let g:indent_guides_guide_size = 1
+let g:indent_guides_color_change_percent = 1
+let g:indent_guides_enable_on_vim_startup = 0
