@@ -74,3 +74,7 @@ let g:indent_guides_enable_on_vim_startup = 0
 " fuzzy file finder (run `install --bin` and add the binary `fzf` to PATH)
 call minpac#add('junegunn/fzf')
 nnoremap <C-p> :FZF<CR>
+
+" auto-format (install clang-complete, autopep8, black, etc)
+" Use :Autoformat to format
+call minpac#add('Chiel92/vim-autoformat')

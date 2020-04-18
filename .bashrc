@@ -32,7 +32,7 @@ PS1="$_GREEN_\u@\h $_PURPLE_\w$_reset_$ "
 # ls alias stuffs
 alias ls='ls --color'
 alias ll='ls -lh --group-directories-first'
-alias la='ll -a'
+alias la='ll -A'
 
 # venv stuffs
 export VENV="$HOME/.virtualenvs"
