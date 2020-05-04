@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# vi-mode key bindings (^_^)
+set -o vi
+
 # environment variables
 export VISUAL=vim
 export EDITOR=vim
