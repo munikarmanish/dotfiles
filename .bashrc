@@ -7,6 +7,7 @@ set -o vi
 export VISUAL=vim
 export EDITOR=vim
 export TERM=xterm-256color
+export S_COLORS=always
 export FZF_DEFAULT_COMMAND="find ."
 
 # colors
@@ -32,10 +33,16 @@ _WHITE_="\[\e[1;37m\]"
 force_color_prompt=yes
 PS1="$_GREEN_\u@\h $_PURPLE_\w$_reset_$ "
 
-# ls alias stuffs
+# alias stuffs
 alias ls='ls --color'
 alias ll='ls -lh --group-directories-first'
 alias la='ll -A'
+
+# add ~/bin to path
+[[ ":$PATH:" != *":$HOME/bin:"* ]] && export PATH="$HOME/bin:$PATH"
+
+# load personal aliases if present
+[[ -f $HOME/.bash_aliases ]] && source $HOME/.bash_aliases
 
 # venv stuffs
 export VENV="$HOME/.virtualenvs"
