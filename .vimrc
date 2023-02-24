@@ -75,6 +75,13 @@ let g:indent_guides_enable_on_vim_startup = 0
 call minpac#add('junegunn/fzf')
 nnoremap <C-p> :FZF<CR>
 
-" auto-format (install clang-complete, autopep8, black, etc)
+" auto-format (install clang-format, autopep8, black, etc)
 " Use :Autoformat to format
 call minpac#add('Chiel92/vim-autoformat')
+
+" auto-complete (install clang)
+call minpac#add('xavierd/clang_complete')
+let g:clang_library_path='/usr/lib/llvm-14/lib/libclang-14.so.1'
+
+" code navigation (install cscope and exuberant-ctags)
+call minpac#add('joe-skb7/cscope-maps')
