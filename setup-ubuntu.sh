@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sudo apt install git clang{,-format} cscope exuberant-ctags
+sudo apt install git clang{,-format} cscope exuberant-ctags python3-autopep8 \
+    isort
 
 mkdir -p ~/.vim/pack/minpac/opt
 if [ ! -d ~/.vim/pack/minpac/opt/minpac ]; then
