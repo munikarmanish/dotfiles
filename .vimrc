@@ -80,9 +80,10 @@ nnoremap <C-p> :FZF<CR>
 call minpac#add('Chiel92/vim-autoformat')
 call minpac#add('fisadev/vim-isort')
 
-" auto-complete (install clang)
+" auto-complete (install clang, and use the commented line for Mac)
 call minpac#add('xavierd/clang_complete')
 let g:clang_library_path='/usr/lib/llvm-14/lib/libclang-14.so.1'
+"let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 call minpac#add('davidhalter/jedi-vim')
 
 " code navigation (install cscope and exuberant-ctags)
