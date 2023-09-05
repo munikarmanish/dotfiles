@@ -53,3 +53,8 @@ mkvenv () {
 workon () {
     source "$VENV/$1/bin/activate"
 }
+
+# run in a particular namespace number
+nsrun() {
+    sudo ip netns exec ns$1 ${@:2}
+}
