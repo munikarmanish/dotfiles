@@ -3,6 +3,9 @@
 # vi-mode key bindings (^_^)
 set -o vi
 
+# expand path variables like $PWD
+shopt -s direxpand
+
 # environment variables
 export VISUAL=vim
 export EDITOR=vim
